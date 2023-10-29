@@ -81,7 +81,9 @@ export const Navbar = () => {
 
       <div id="nav--profile-links">
         <AiOutlineHeart size={"20px"} />
+        <Link to="/cart" >
         <LiaShoppingBagSolid size={"20px"} />
+        </Link>
         <ThemeProvider theme={theme}>
           <Button variant="contained" color="black" id="nav--login-btn">
             <Link

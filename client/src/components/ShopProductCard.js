@@ -1,16 +1,24 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { StarRating } from "./StarRating";
 import { Button } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "../themes/Buttons";
 import { Link } from "react-router-dom";
+import { Context } from "../data/context/ContextProvider";
 
 export const ShopProductCard = (props) => {
   const product = props.product;
   const url = `/product/${product.name}`;
+  const {cart, addToCart, removeFromCart} = useContext(Context);
+  const [inCart, setInCart] = useState(() => {
+    const match = cart.find(productInCart => product.id === productInCart.id);
+    if(match) return true;
+    else return false;
+  });
   return (
-    <Link to={url} style={{textDecoration: 'none'}}>
+    
       <div className="product-card">
+        
         <img src={product.image} className="product-card-img" />
         <div className="product-card-details">
           <div className="product-card-title">{product.name}</div>
@@ -21,20 +29,33 @@ export const ShopProductCard = (props) => {
               rating={product.rating}
             />
           </div>
-          <div className="product-card-price">₹ {product.price}</div>
+          <div className="product-card-price">₹ {product.price}
+          
+          </div>
+          
           <div className="product-card--button-container">
             <ThemeProvider theme={theme}>
               <Button
                 variant="outlined"
                 className="product-card--add-btn"
                 color="chocolate"
+                onClick={() => {
+                  if(inCart) {
+                    removeFromCart(product);
+                    setInCart(false);
+                  }
+                  else {
+                    addToCart(product);
+                    setInCart(true);
+                  }
+                }}
               >
-                ADD TO BAG
+                {inCart ? "REMOVE FROM BAG" : "ADD TO BAG"} 
               </Button>
             </ThemeProvider>
           </div>
         </div>
       </div>
-    </Link>
+    
   );
 };

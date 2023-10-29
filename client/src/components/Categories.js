@@ -13,7 +13,12 @@ export const Categories = () => {
             love and happiness.
         </span>
         <div id='categories'>
-            {categories.map((category) => <Category image={category.image} name={category.name}/>)}
+            {categories.map((category, index) => 
+            <Category
+            key={index}
+            image={category.image}
+            name={category.name}
+            />)}
         </div>
     </div>
   )

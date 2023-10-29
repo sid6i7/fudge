@@ -7,7 +7,7 @@ export const StarRating = ({ nOfRatings, rating }) => {
     stars.push(<span key={i} className={starClass}></span>);
   }
 
-  for(let i = 0; i<5-rating; i++) {
+  for(let i = rating; i<5; i++) {
     const starClass = "fa fa-star product--details--star";
     stars.push(<span key={i} className={starClass}></span>);
   }

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { ShopFilter } from "../components/ShopFilter";
 import { allProducts } from "../data/products";
 import { ShopProductCard } from "../components/ShopProductCard";
@@ -9,6 +9,7 @@ export const ShopPage = () => {
   const [filters, setFilters] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState(allProducts);
   const [loading, setLoading] = useState(false);
+
 
   useEffect(() => {
     const newFilteredProducts = allProducts.filter((product) => {
