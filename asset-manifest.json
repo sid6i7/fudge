@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/fudge/static/css/main.da3527f2.css",
+    "main.js": "/fudge/static/js/main.ee740980.js",
+    "static/js/787.adf6e471.chunk.js": "/fudge/static/js/787.adf6e471.chunk.js",
+    "static/media/shower.mp4": "/fudge/static/media/shower.2d8517f9808b5557180d.mp4",
+    "static/media/shop_banner.jpg": "/fudge/static/media/shop_banner.b6d9bcc8ed3103f8915b.jpg",
+    "static/media/chocolate_1.png": "/fudge/static/media/chocolate_1.7a04dcd4e90be8164fd4.png",
+    "static/media/vis_3.png": "/fudge/static/media/vis_3.e2710b7298f2cde55ddb.png",
+    "static/media/vis_2.png": "/fudge/static/media/vis_2.2db1b2b70811e5a44eae.png",
+    "static/media/vis_1.png": "/fudge/static/media/vis_1.77af241bc9f2588eb48f.png",
+    "static/media/vis_4.png": "/fudge/static/media/vis_4.c0299000830a3418fb02.png",
+    "static/media/chocolate_vertical.jpg": "/fudge/static/media/chocolate_vertical.03197e547650afa60990.jpg",
+    "static/media/fudge_logo.jpg": "/fudge/static/media/fudge_logo.799cc4ffc052dbfc7f7b.jpg",
+    "static/media/footer_logo.png": "/fudge/static/media/footer_logo.906c2f1bfc2bea1550b3.png",
+    "static/media/footer_background.jpeg": "/fudge/static/media/footer_background.bb4aca7bf93321ef9daf.jpeg",
+    "static/media/facebook_logo.png": "/fudge/static/media/facebook_logo.84f50ea3f04296c3988b.png",
+    "static/media/muffin_category.jpg": "/fudge/static/media/muffin_category.6f53a81148f43fb07e51.jpg",
+    "static/media/cookie_category.png": "/fudge/static/media/cookie_category.14444cd648adc4c1b3d2.png",
+    "static/media/cupcake_error.jpg": "/fudge/static/media/cupcake_error.bc3431fa9ee95c90fdc0.jpg",
+    "static/media/fudge_category.png": "/fudge/static/media/fudge_category.5e359ae0e4e9daad8852.png",
+    "static/media/bar_category.png": "/fudge/static/media/bar_category.98777908b82d09000707.png",
+    "static/media/logo.svg": "/fudge/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/fudge/index.html",
+    "main.da3527f2.css.map": "/fudge/static/css/main.da3527f2.css.map",
+    "main.ee740980.js.map": "/fudge/static/js/main.ee740980.js.map",
+    "787.adf6e471.chunk.js.map": "/fudge/static/js/787.adf6e471.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.da3527f2.css",
+    "static/js/main.ee740980.js"
+  ]
+}
