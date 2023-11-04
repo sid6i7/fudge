@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../images/fudge_logo.jpg";
-import { AiOutlineHeart } from "react-icons/ai";
+import { CgProfile } from "react-icons/cg";
 import { LiaShoppingBagSolid } from "react-icons/lia";
 import { Button } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
@@ -80,9 +80,11 @@ export const Navbar = () => {
       </div>
 
       <div id="nav--profile-links">
-        <AiOutlineHeart size={"20px"} />
-        <Link to="/cart" >
-        <LiaShoppingBagSolid size={"20px"} />
+        <Link to="/profile">
+        <CgProfile size={"20px"} color="black"/>
+        </Link>
+        <Link to="/cart"  >
+        <LiaShoppingBagSolid size={"20px"} color="black" />
         </Link>
         <ThemeProvider theme={theme}>
           <Button variant="contained" color="black" id="nav--login-btn">
