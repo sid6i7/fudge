@@ -669,6 +669,7 @@
 }
 
 .product-card {
+  cursor: pointer;
   width: 70%;
   background-color: #f7f7f5;
   display: flex;

@@ -3,10 +3,11 @@ import { StarRating } from "./StarRating";
 import { Button } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 import { theme } from "../themes/Buttons";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Context } from "../data/context/ContextProvider";
 
 export const ShopProductCard = (props) => {
+  const navigate = useNavigate();
   const product = props.product;
   const url = `/product/${product.name}`;
   const {cart, addToCart, removeFromCart} = useContext(Context);
@@ -15,9 +16,13 @@ export const ShopProductCard = (props) => {
     if(match) return true;
     else return false;
   });
+
+  const handleClick = () => {
+    navigate(url)
+  }
   return (
     
-      <div className="product-card">
+      <div className="product-card" onClick={handleClick}>
         
         <img src={product.image} className="product-card-img" />
         <div className="product-card-details">
